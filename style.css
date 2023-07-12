@@ -7,7 +7,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: luca;
+    font-family:  pixel-font;
 
 }
 
@@ -28,11 +28,6 @@ body {
     opacity: 0;
 }
 
-
-@font-face {
-    font-family: luca;
-    src: url(../fonts/TeleSys.ttf);
-}
 
 .welcome-header {
     position: absolute;
