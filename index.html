@@ -1,0 +1,210 @@
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        
+
+        <div class="snowflakes" aria-hidden="true">
+            <div class="snowflake">
+                <img class="logo2"src="./images/logo.png">
+
+            </div>
+            <div class="snowflake">
+                <img class="logo2"src="./images/logo.png">
+
+            </div>
+            <div class="snowflake">
+                <img class="logo2"src="./images/logo.png">
+
+            </div>
+            <div class="snowflake">
+                <img class="logo2"src="./images/logo.png">
+
+            </div>
+            <div class="snowflake">
+                <img class="logo2"src="./images/logo.png">
+
+            </div>
+            <div class="snowflake">
+                <img class="logo2"src="./images/logo.png">
+
+            </div>
+            <div class="snowflake">
+                <img class="logo2"src="./images/logo.png">
+
+            </div>
+            <div class="snowflake">
+                <img class="logo2"src="./images/logo.png">
+
+            </div>
+            <div class="snowflake">
+                <img class="logo2"src="./images/logo.png">
+
+            </div>
+            <div class="snowflake">
+                <img class="logo2"src="./images/logo.png">
+
+            </div>
+          </div>
+      
+        <div class="nav-bar">
+            <img class="logo"src="./images/logo.png">
+            <ul>
+                <li><a onclick="toggle('projects')"><span class="arrow-right">></span>Projects</a></li>
+                <li><a onclick="toggle('about')"> <span class="arrow-right">></span>About</a></li>
+                <li><a onclick="toggle('contact')"><span class="arrow-right">></span>Contact</a></li>
+            </ul>
+        </div>
+
+        <div id="projects" class="project-list">
+            <div class="item">
+                <img class="project-image" src="./images/MidnightRunner.PNG">
+
+                <p class="project-description">MIDNIGHT RUNNER</p>
+                <div class="button">
+                    <a>LIVE VIEW</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="project-list">
+            <div class="item">
+                <img class="icon2" src="https://www.vectorlogo.zone/logos/github/github-tile.svg" alt="git" width="20" height="40" />
+
+                <p class="project-description">GITHUB</p>
+                <div onclick="window.location.href = 'https://github.com/xotic11'" class="button">
+                    <a>CONTACT ME</a>
+                </div>
+            </div>
+            <div class="item">
+                <img class="icon2" src="https://www.vectorlogo.zone/logos/instagram/instagram-tile.svg" alt="git" width="20" height="40" />
+
+                <p class="project-description">INSTAGRAM</p>
+                <div onclick="window.location.href = 'https://instagram.com/05.jonte'" class="button">
+                    <a>CONTACT ME</a>
+                </div>
+            </div>
+            <div class="item">
+                <img class="icon2" src="https://www.vectorlogo.zone/logos/discordapp/discordapp-tile.svg" alt="git" width="20" height="40" />
+
+                <p class="project-description">DISCORD</p>
+                <div onclick="window.location.href = 'https://discordapp.com/users/980390904806400050" class="button">
+                    <a>CONTACT ME</a>
+                </div>
+            </div>
+        </div>
+            <div class="top-nav-bar">
+                <a href="https://github.com/xotic11"> <img class="icons" src="https://www.vectorlogo.zone/logos/github/github-tile.svg" alt="git" width="40" height="40" /></a> 
+                <a href="https://discordapp.com/users/980390904806400050"><img class="icons" src="https://www.vectorlogo.zone/logos/discordapp/discordapp-tile.svg" alt="git" width="40" height="40" /> </a>
+                <a href="https://instagram.com/05.jonte"><img class="icons" src="https://www.vectorlogo.zone/logos/instagram/instagram-tile.svg" alt="git" width="40" height="40" /> </a>
+            </div>
+        <div id="hero">
+            <section  class="container">
+              <p class="hero-title">
+                Hi, my name is <span class="text-color-main name">JONTE</span>
+                <br />
+                I'm a self thaught Developer.
+              </p>
+
+            </section>
+        </div>
+
+        <div id="about" class="project-list project-list-2">
+            <div class="item">
+                <img class="image-3" src="./images/logo.png">
+
+                <p class="project-description">JONTE</p>
+                <div class="text-about-me">
+                    <a>Hello my name is Jonte i'm a 17 year old self taught Programmer. I found my passion for Programming and for Video Games since i'm a kid. I am eager to learn new things and want to create awesomeness!</a>
+                </div>
+            </div>
+        </div>
+     
+   
+
+     
+        
+
+    </body>
+
+    <script>
+        var projects = false
+        var about = false 
+        var contact = false
+      
+        function toggle(destination)
+            {
+                if(destination == "projects")
+                {
+                    if(projects == true) {
+                        document.getElementById("projects").style.display = "none";
+                        document.getElementById("contact").style.display = "none";
+                        document.getElementById("about").style.display = "none";
+
+                        projects = false
+
+                        document.getElementById("hero").style.display = "flex";
+
+                        return;
+                    }
+                    document.getElementById("hero").style.display = "none";
+                    document.getElementById("projects").style.display = "block";
+                    document.getElementById("about").style.display = "none";
+                   document.getElementById("contact").style.display = "none";
+
+                    projects = true
+                    about = false
+                    contact = false
+                }
+                if(destination == "about")
+                {
+                    if(about == true) {
+                        document.getElementById("about").style.display = "none";
+                        about = false
+                        document.getElementById("hero").style.display = "flex";
+                        document.getElementById("contact").style.display = "none";
+                        document.getElementById("projects").style.display = "none";
+                        return;
+                    }
+                    document.getElementById("hero").style.display = "none";
+
+                    console.log(about)
+                    document.getElementById("about").style.display = "flex";
+                    about = true
+                    document.getElementById("projects").style.display = "none";
+                    document.getElementById("contact").style.display = "none";
+
+                    projects = false
+                    contact = false
+                }
+                if(destination == "contact")
+                {
+                    if(contact == true) {
+                        document.getElementById("contact").style.display = "none";
+                        document.getElementById("hero").style.display = "flex";
+                        document.getElementById("about").style.display = "none";
+                        document.getElementById("projects").style.display = "none";
+
+                        contact = false
+                        return;
+                    }
+                    document.getElementById("about").style.display = "none";
+                    document.getElementById("contact").style.display = "block";
+                    document.getElementById("hero").style.display = "none";
+
+                    document.getElementById("projects").style.display = "none";
+                    projects = false
+                    about = false
+                    contact = true
+                }
+            }
+    </script>
+</html>
