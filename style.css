@@ -1,6 +1,6 @@
 @font-face {
     font-family: pixel-font;
-    src: url(../fonts/TeleSys.ttf);
+    src: url(./TeleSys.ttf);
 }
 
 * {
